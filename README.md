@@ -1,1 +1,1 @@
-# ayu-bitirme-projesi
+# AYÜ Bitirme Projesi
