@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d6b9a3df-578e-44fd-83ed-6b822292a1ab" name="Hetzner (project level)" url="http://bitirmeprojesi.sabrigunes.com">
+        <fileTransfer rootFolder="/var/www/vhosts/sabrigunes.com/bitirmeprojesi.sabrigunes.com" accessType="SFTP" host="88.99.86.184" port="22" sshConfigId="01a399f1-e888-4b2a-9730-492a46d5a858" sshConfig="root@88.99.86.184:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
