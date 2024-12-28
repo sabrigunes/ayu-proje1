@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('keywords');
             $table->text('description');
-            $table->text('image');
+            $table->longText('image');
             $table->binary('status');
             $table->timestamps();
             $table->softDeletes();
