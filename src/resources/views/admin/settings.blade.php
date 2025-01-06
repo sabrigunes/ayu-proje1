@@ -1,6 +1,6 @@
 @extends('admin.layout')
 
-@section('title', "Yeni İlan Oluştur")
+@section('title', "Ayarlar")
 
 @section('content')
 

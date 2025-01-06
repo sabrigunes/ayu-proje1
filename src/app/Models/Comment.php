@@ -10,13 +10,13 @@ class Comment extends Model
     public static function getAllComments()
     {
         return Comment::select('comments.id AS id', 'comments.comment', 'comments.rate', 'comments.comment', 'comments.car_id', 'comments.user_id', 'comments.status', 'cars.title AS car_title')
-            ->join('cars', 'cars.id', '=', 'comments.car_id')->get();
+            ->join('cars', 'cars.id', '=', 'comments.car_id')->limit(100)->get();
     }
 
     public static function getCommentsForUser($user_id)
     {
         return Comment::select('comments.id AS id', 'comments.comment', 'comments.rate', 'comments.comment', 'comments.car_id', 'comments.user_id', 'comments.status', 'cars.title AS car_title')
-            ->where('comments.user_id', $user_id)->join('cars', 'cars.id', '=', 'comments.car_id')->get();
+            ->where('comments.user_id', $user_id)->join('cars', 'cars.id', '=', 'comments.car_id')->limit(100)->get();
     }
 
     public static function getCommentsForSelectedCar($carId)

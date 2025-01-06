@@ -1,5 +1,7 @@
 @extends('admin.layout')
 
+@section('title', "İlanlar")
+
 @section('content')
 
 <!--begin::Row-->

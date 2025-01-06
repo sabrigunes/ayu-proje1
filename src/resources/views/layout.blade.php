@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="utf-8">
-    <title> @yield('title') </title>
+    <title> @yield('title') | {{ $settings->title }}</title>
     <!-- Stylesheets -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/slick-theme.css">
@@ -10,8 +10,6 @@
     <link href="/css/mmenu.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     @yield('css')
-
-
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <!-- Responsive -->

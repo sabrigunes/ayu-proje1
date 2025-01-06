@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', $car->title )
+
 @section('content')
     <!-- inventory-section -->
 <section class="inventory-section pb-0 layout-radius mb-5">
@@ -25,11 +27,6 @@
                                 @endif
 
 
-                            </div>
-                            <div class="content-box">
-                                <ul class="video-list">
-                                    <li><a href="{{ $car->image }}" data-fancybox="gallery"><img src="/images/resource/video1-4.svg">Mega Foto</a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>

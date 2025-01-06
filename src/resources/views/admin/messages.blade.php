@@ -1,4 +1,5 @@
 @extends('admin.layout')
+@section('title', "Mesajlar")
 
 @section('content')
 
@@ -32,6 +33,7 @@
                                     <th>Mesaj</th>
                                     <th>IP Adresi</th>
                                     <th>Mesaj Tarihi</th>
+                                    <th>Durum</th>
                                     <th>İşlemler</th>
                                 </tr>
                                 </thead>
@@ -41,6 +43,7 @@
                                         <td>{{ $message->name }}</td>
                                         <td>{{ $message->email }}</td>
                                         <td>{{ $message->phone }}</td>
+                                        <td>{{ $message->subject }}</td>
                                         <td>{{ $message->message }}</td>
                                         <td>{{ $message->ip }}</td>
                                         <td>{{ $message->created_at }}</td>

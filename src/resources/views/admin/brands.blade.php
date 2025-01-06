@@ -1,4 +1,5 @@
 @extends('admin.layout')
+@section('title', "Markalar")
 
 @section('content')
 

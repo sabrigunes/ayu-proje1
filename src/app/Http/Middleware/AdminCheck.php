@@ -12,11 +12,11 @@ class AdminCheck
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response) $next
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!Auth::user()->is_admin=='1')
+        if (!Auth::user()->is_admin == '1')
             return redirect(route('admin_get_car_list'));
         return $next($request);
     }
